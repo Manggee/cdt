@@ -18,6 +18,10 @@ def solution(a, b, c):
     return answer
 
 
+# 처음에 틀린이유
+# a == b or b == c or a == c 라는 조건에는 a,b,c가 동일한 경우도 포함된다.
+# 저 조건을 제일 먼저 작성했기에 a,b,c가 전부 동일한 경우로 계산되지 않고 상위에서 이미 계산이 끝나버렸다.
+
 print(solution(a, b, c))
 
 

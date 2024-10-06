@@ -12,5 +12,7 @@ def solution(a, b, flag):
 
 print(solution(a, b, flag))
 
-# def soulution(a, b, flag):
-#     return a + b if flag else a - b
+
+# 다른 사람의 풀이
+def soulution(a, b, flag):
+    return a + b if flag else a - b
