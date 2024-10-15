@@ -9,7 +9,7 @@ def solution(storage, num):
             pos = clean_storage.index(storage[i])
             clean_num[pos] += num[i]
         else:
-            clean_storage.append(storage[i])
+            clean_storage.append(storage[i]) # num에서 storage로 수정
             clean_num.append(num[i])
 
     # 아래 코드에는 틀린 부분이 없습니다.
