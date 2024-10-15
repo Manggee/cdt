@@ -15,6 +15,7 @@ def solution(storage, num):
     # 아래 코드에는 틀린 부분이 없습니다.
 
     max_num = max(clean_num)
+    # clean_num list에서 9의 위치는 0번째이므로 clean_storage[0]이 되고 answer = "pencil"이 된다.
     answer = clean_storage[clean_num.index(max_num)]
     return answer
 print(solution(storage, num))
