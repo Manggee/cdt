@@ -19,3 +19,5 @@ def solution(storage, num):
     answer = clean_storage[clean_num.index(max_num)]
     return answer
 print(solution(storage, num))
+
+# 아직 못 풀었다 내일 꼭 하도록
