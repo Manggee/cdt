@@ -11,4 +11,3 @@ def solutions(vec, mat):
         answer.append(temp) # answer 라는 리스트에 첨부하기
     return answer
 print(solutions(vec, mat))
-
