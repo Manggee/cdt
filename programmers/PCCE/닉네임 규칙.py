@@ -21,6 +21,26 @@ def solution(nickname):
     return answer
 print(solution(nickname))
 
+# 두번째 방법
+def solution(nickname):
+    answer = ""
+    for letter in nickname:
+        if letter == "l":
+            answer += "I"
+        elif letter == "w":
+            answer += "vv"
+        elif letter == "W":
+            answer += "VV"
+        elif letter == "O":
+            answer += "0"
+        else:
+            answer += letter
+    while len(answer) < 4:
+        answer += "o"
+    if len(answer) > 8:
+        answer = answer[:8]
+    return answer
+
 # 4글자 ~ 8글자 이하
 # l,w O,W 사용 불가
 # 소문자 l을 대문자 I로 변경합니다
