@@ -1,5 +1,6 @@
 my_string = "banana"
 targert = "ana"
+
 def solution(my_string, target):
     answer = 0
     if target in my_string:
