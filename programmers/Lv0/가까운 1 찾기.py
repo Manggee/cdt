@@ -7,4 +7,5 @@ def solution(arr, idx):
             return i
     else:
         return -1
+
 print(solution(arr, idx))
