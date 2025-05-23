@@ -21,3 +21,5 @@ def solution(my_string, indices):
     return answer
 
 print(solution(my_string, indices))
+
+# indices에 해당하는 글자를 없애지 말고 반대로 indices에 들어가있지 않은 글자만 모은다고 생각하고 풀기
