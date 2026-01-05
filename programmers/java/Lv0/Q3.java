@@ -1,22 +1,23 @@
 package Lv0;
 
 public class Q3 {
-    public int solution(int[] args) {
-        for (int i = 0; i < args.length; i++) {
-            if (args[i] < 0) {
-                return i;
+    public String solution(String my_string, String alp) {
+        char target = alp.charAt(0); // target 설정
+        StringBuilder sb = new StringBuilder(); // StringBuilder는 무엇이며 왜 사용할까?
+
+        for (int i = 0; i < my_string.length(); i++) {
+            char ch = my_string.charAt(i);
+            if (ch == target) {
+                sb.append(Character.toUpperCase(ch));
+            } else {
+                sb.append(ch);
             }
         }
-        return -1;
+        return sb.toString();
     }
 
     public static void main(String[] args) {
         Q3 s = new Q3();
-
-        int[] a = {12, 4, 15, 46, 38, -2, 15};
-        int[] b = {13, 22, 53, 24, 15, 6};
-
-        System.out.println(s.solution(a));
-        System.out.println(s.solution(b));
+        System.out.println(s.solution("programmers", "p"));
     }
 }
